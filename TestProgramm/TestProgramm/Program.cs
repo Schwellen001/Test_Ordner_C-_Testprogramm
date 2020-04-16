@@ -11,19 +11,25 @@ namespace TestProgramm
     {
         static void Main(string[] args)
         {
-            Titel("Dies ist kein RAM 1500");
+            Titel("Dies ist kein RAM 1500", ConsoleColor.Red);
+
+            Console.WriteLine("hallo Welt");
+            
             Console.ReadKey();
         }
 
-        static void Titel(string Titel)
+        static void Titel(string Titel, ConsoleColor textfarbe)
         {
             // was gemacht wird:
 
 
             int Breite = Console.WindowWidth;
             int textln = Titel.Length;
+            ConsoleColor akT = Console.ForegroundColor; // aktutelle Farbe speichern
 
             Console.Clear();
+
+            Console.ForegroundColor = textfarbe;
 
             for (int i = 0; i < Console.WindowWidth; i++)
             {
@@ -40,6 +46,8 @@ namespace TestProgramm
             {
                 Console.Write("*");
             }
+
+            Console.ForegroundColor = akT; 
         }//
     }
 }
