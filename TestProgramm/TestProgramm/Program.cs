@@ -9,6 +9,7 @@ namespace TestProgramm
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
