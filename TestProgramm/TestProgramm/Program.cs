@@ -11,7 +11,7 @@ namespace TestProgramm
     {
         static void Main(string[] args)
         {
-            Titel("das ist ein Text");
+            Titel("Dies ist kein RAM 1500");
             Console.ReadKey();
         }
 
@@ -19,11 +19,20 @@ namespace TestProgramm
         {
             // was gemacht wird:
 
+
+            int Breite = Console.WindowWidth;
+            int textln = Titel.Length;
+
             Console.Clear();
 
             for (int i = 0; i < Console.WindowWidth; i++)
             {
                 Console.Write("*");
+            }
+
+            for (int i = 0; i < (Breite - textln)/2; i++)
+            {
+                Console.Write(" ");   
             }
 
             Console.WriteLine(Titel);
