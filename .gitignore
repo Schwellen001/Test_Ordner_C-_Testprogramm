@@ -1,0 +1,4 @@
+// Was soll ignoriert werden (Stern steht für alle möglichen Buchstaben):
+
+bin/
+obj/
