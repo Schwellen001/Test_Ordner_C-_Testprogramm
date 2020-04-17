@@ -11,18 +11,13 @@ namespace TestProgramm
     {
         static void Main(string[] args)
         {
-            Titel("Dies ist ein Test", ConsoleColor.Red);
+            Titel("Dies ist kein RAM 1500", ConsoleColor.Red);
 
-            string binZahl = BinaerZahleinlesen(); 
+            Console.WriteLine("hallo Welt");
             
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// Gibt einen Text formatiert aus
-        /// </summary>
-        /// <param name="Titel">Text der ausgegeben werden soll</param>
-        /// <param name="textfarbe">Farbe des Textes</param
         static void Titel(string Titel, ConsoleColor textfarbe)
         {
             // was gemacht wird:
@@ -53,13 +48,6 @@ namespace TestProgramm
             }
 
             Console.ForegroundColor = akT; 
-        }//
-
-        static string BinaerZahleinlesen()
-        {
-            Console.WriteLine("Bitte Zahl eingeben (0/1):");
-            string Input = Console.ReadLine();
-            return Input; 
         }//
     }
 }
