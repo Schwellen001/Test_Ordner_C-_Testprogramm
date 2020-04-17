@@ -14,6 +14,8 @@ namespace TestProgramm
             Titel("Dies ist kein RAM 1500", ConsoleColor.Red);
 
             Console.WriteLine("hallo Welt");
+
+            Menue(); 
             
             Console.ReadKey();
         }
@@ -48,6 +50,19 @@ namespace TestProgramm
             }
 
             Console.ForegroundColor = akT; 
+        }//
+
+
+        /// <summary>
+        /// Ausgabe eines Menüs
+        /// </summary>
+        static void Menue()
+        {
+            Console.WriteLine("1. 10 zu Binär");
+            Console.WriteLine("2. 10 zu HEX");
+            Console.WriteLine("3. 2 zu Decimal");
+            Console.WriteLine("\n Bitte einen Menüpunkt auswählen:");
+
         }//
     }
 }
